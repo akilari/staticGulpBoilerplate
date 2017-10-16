@@ -1,0 +1,22 @@
+.my-footer {
+  border-top: 1px solid #c9c9c9;
+    min-height: 250px;
+    display: block;
+    padding-bottom: 20px;
+    p {
+      color: white;
+      margin-top: 10px;
+      font-family: 'Crimson Text', serif;
+      text-align: center;
+      font-size: 30px;
+    }
+    .social-icons {
+      margin:40px 0 0; 
+      text-align: center;
+      img {
+        height: 40px;
+        width: 40px;
+        margin-right: 40px;
+      }
+    }
+}

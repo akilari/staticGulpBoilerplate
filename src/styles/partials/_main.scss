@@ -1,0 +1,30 @@
+.my-main {
+clear: both;
+    .my-products {
+      margin-top: 30px;
+      margin-bottom: 90px;
+        .col-lg-4 {
+            border-right: 1px solid #c9c9c9;
+            text-align: center;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    h1 {
+      color: white;
+      font-family: 'Crimson Text', serif;
+      text-align: center;
+      margin: 70px 0 0 0;
+      font-size: 58px;
+      line-height: 60px;
+    }
+    p {
+      color: white;
+      margin-top: 10px;
+      font-family: 'Crimson Text', serif;
+      text-align: center;
+      font-size: 30px;
+      line-height: 30px;
+    }
+}
