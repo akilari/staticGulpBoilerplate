@@ -49,12 +49,12 @@ gulp.task('bs-reload', function () {
 
 gulp.task('serveprod', function() {
     connect.server({
-      root: [your_project_path],
-      port: process.env.PORT || 5000, // localhost:5000
+      root: [/Users/kanil1/Documents/workspace/staticGulpBoilerplate],
+      port: process.env.PORT || 3000, // localhost:3000
       livereload: false
     });
   });
-  
+
 gulp.task('default', ['styles', 'scripts', 'browser-sync'], function () {
     gulp.watch("src/styles/**/*.scss", ['styles']);
     gulp.watch("src/scripts/*.js", ['scripts']);

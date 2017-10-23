@@ -1,10 +1,11 @@
 {
   "name": "staticgulpboilerplate",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Demo to show gulp static template",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "start":"gulp"
   },
   "author": "Anil Kilari",
   "license": "ISC",
