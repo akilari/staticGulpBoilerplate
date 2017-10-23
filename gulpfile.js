@@ -46,14 +46,8 @@ gulp.task('browser-sync', function() {
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
+gulp.task('heroku:production', ['styles', 'scripts', 'browser-sync'])
 
-gulp.task('serveprod', function() {
-    connect.server({
-      root: [/Users/kanil1/Documents/workspace/staticGulpBoilerplate],
-      port: process.env.PORT || 3000, // localhost:3000
-      livereload: false
-    });
-  });
 
 gulp.task('default', ['styles', 'scripts', 'browser-sync'], function () {
     gulp.watch("src/styles/**/*.scss", ['styles']);
