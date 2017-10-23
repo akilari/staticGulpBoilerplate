@@ -47,6 +47,14 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
+gulp.task('serveprod', function() {
+    connect.server({
+      root: [your_project_path],
+      port: process.env.PORT || 5000, // localhost:5000
+      livereload: false
+    });
+  });
+  
 gulp.task('default', ['styles', 'scripts', 'browser-sync'], function () {
     gulp.watch("src/styles/**/*.scss", ['styles']);
     gulp.watch("src/scripts/*.js", ['scripts']);
