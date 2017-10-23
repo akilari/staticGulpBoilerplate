@@ -46,7 +46,7 @@ gulp.task('browser-sync', function() {
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
-gulp.task('heroku:production', ['styles', 'scripts', 'browser-sync'])
+gulp.task('heroku:production', ['default'])
 
 
 gulp.task('default', ['styles', 'scripts', 'browser-sync'], function () {
