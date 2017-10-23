@@ -5,8 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "gulp",
-    "start": "node app",
-    "postinstall": "gulp default"
+    "start": "gulp",
+    "postinstall": "gulp"
   },
   "author": "Anil Kilari",
   "license": "ISC",
