@@ -46,8 +46,12 @@ gulp.task('browser-sync', function() {
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
-gulp.task('heroku:production', ['default'])
 
+gulp.task('heroku:production', ['styles', 'scripts', 'browser-sync'], function () {
+    gulp.watch("src/styles/**/*.scss", ['styles']);
+    gulp.watch("src/scripts/*.js", ['scripts']);
+    gulp.watch("app/*.html", ['bs-reload']);
+});
 
 gulp.task('default', ['styles', 'scripts', 'browser-sync'], function () {
     gulp.watch("src/styles/**/*.scss", ['styles']);
